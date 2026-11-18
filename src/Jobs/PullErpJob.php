@@ -39,6 +39,7 @@ use Rishadblack\SyllooPosCore\Services\ErpApiService;
 use Rishadblack\SyllooPosCore\Services\ProductSearchIndex;
 use Rishadblack\SyllooPosCore\Services\SyncErrorLog;
 use Rishadblack\SyllooPosCore\Support\CartPriceCache;
+use Rishadblack\SyllooPosCore\Support\TillQueues;
 use Throwable;
 
 class PullErpJob implements ShouldQueue
@@ -156,7 +157,7 @@ class PullErpJob implements ShouldQueue
         $this->page = $page;
         $this->totalPages = $totalPages;
 
-        $this->onQueue(self::QUEUE);
+        $this->onQueue(TillQueues::name(TillQueues::PULL));
     }
 
     /**

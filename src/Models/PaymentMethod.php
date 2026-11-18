@@ -8,6 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Rishadblack\SyllooPosCore\Models\Concerns\HasCachedImages;
 
+/**
+ * @property string|null $kind
+ * @property string|null $name
+ */
+/**
+ * @property string|null $kind
+ * @property string|null $name
+ */
 class PaymentMethod extends Model
 {
     use HasCachedImages, HasFactory, HasUlids, SoftDeletes;
@@ -47,6 +55,19 @@ class PaymentMethod extends Model
         }
 
         return str_contains(mb_strtolower((string) $this->name), 'cash');
+    }
+
+    /**
+     * Whether it is a card: its kind in the ERP (`card`), or (from an ERP that sends no kind) a name with "card" in it.
+     * A card payment may keep the card's last four digits.
+     */
+    public function isCard(): bool
+    {
+        if (filled($this->kind)) {
+            return $this->kind === 'card';
+        }
+
+        return str_contains(mb_strtolower((string) $this->name), 'card');
     }
 
     /**

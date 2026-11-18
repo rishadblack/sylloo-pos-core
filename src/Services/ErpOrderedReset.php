@@ -14,6 +14,7 @@ use Rishadblack\SyllooPosCore\Models\Setting;
 use Rishadblack\SyllooPosCore\Models\Shift;
 use Rishadblack\SyllooPosCore\Support\AppVersion;
 use Rishadblack\SyllooPosCore\Support\DeviceState;
+use Rishadblack\SyllooPosCore\Support\TillQueues;
 use Throwable;
 
 /**
@@ -283,7 +284,7 @@ class ErpOrderedReset
 
         Order::rememberTerminalSerial($terminalSerial);
 
-        QueueWorker::up('default');
-        QueueWorker::up('images');
+        QueueWorker::up(TillQueues::name(TillQueues::DEFAULT));
+        QueueWorker::up(TillQueues::name(TillQueues::IMAGES));
     }
 }

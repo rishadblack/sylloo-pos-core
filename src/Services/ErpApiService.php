@@ -193,9 +193,10 @@ class ErpApiService extends DeviceApi
     }
 
     /**
-     * Close the shift's register session with the counted cash (RegisterSync); answers with the closed session.
+     * Close the shift's register session with the counted cash and the cash handed over to the main office
+     * (RegisterSync); answers with the closed session and its handover.
      *
-     * @param  array{cash_register_session_id: string, counted_cash: float, closing_note?: string}  $data
+     * @param  array{cash_register_session_id: string, counted_cash: float, handover_amount?: float, closing_note?: string}  $data
      */
     public function registerClose(array $data): Response
     {

@@ -4,7 +4,7 @@ namespace Rishadblack\SyllooPosCore\Receipts;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
-use Milon\Barcode\Facades\DNS1DFacade;
+use Rishadblack\SyllooPosCore\Contracts\ReceiptBarcode;
 use Rishadblack\SyllooPosCore\Models\Order;
 use Rishadblack\SyllooPosCore\Services\SaleReturns;
 
@@ -83,7 +83,7 @@ class ReceiptOrderData extends JsonResource
     }
 
     /**
-     * Order code as a barcode image (data URI), like the ERP's OrderData.
+     * Order code as a barcode image (data URI), like the ERP's OrderData; drawn by the till's ReceiptBarcode (Code 128).
      */
     protected function barcode(): ?string
     {
@@ -91,7 +91,7 @@ class ReceiptOrderData extends JsonResource
             return null;
         }
 
-        $svg = DNS1DFacade::getBarcodeSVG((string) $this->code, $this->barcodeType, 1.4, 40, 'black', false);
+        $svg = app(ReceiptBarcode::class)->svg((string) $this->code, $this->barcodeType);
 
         return $svg ? 'data:image/svg+xml;base64,'.base64_encode($svg) : null;
     }

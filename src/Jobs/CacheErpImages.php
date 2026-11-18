@@ -17,6 +17,7 @@ use Rishadblack\SyllooPosCore\Models\Product;
 use Rishadblack\SyllooPosCore\Models\ShippingMethod;
 use Rishadblack\SyllooPosCore\Models\User;
 use Rishadblack\SyllooPosCore\Services\ImageCache;
+use Rishadblack\SyllooPosCore\Support\TillQueues;
 
 /**
  * Downloads the ERP images of synced records into the local cache (see {@see ImageCache}) and
@@ -58,7 +59,7 @@ class CacheErpImages implements ShouldQueue
 
     public function __construct(public ?string $modelClass = null, public ?array $ids = null)
     {
-        $this->onQueue(self::QUEUE);
+        $this->onQueue(TillQueues::name(TillQueues::IMAGES));
     }
 
     public static function supports(string $modelClass): bool

@@ -23,6 +23,7 @@ use Rishadblack\SyllooPosCore\Services\ErpCircuitBreaker;
 use Rishadblack\SyllooPosCore\Services\SaleChain;
 use Rishadblack\SyllooPosCore\Services\SyncErrorLog;
 use Rishadblack\SyllooPosCore\Services\SyncStatusService;
+use Rishadblack\SyllooPosCore\Support\TillQueues;
 use Throwable;
 
 class PushErpJob implements ShouldQueue
@@ -106,7 +107,7 @@ class PushErpJob implements ShouldQueue
      */
     public function __construct(public ?string $orderId = null, public ?bool $force = false, public ?string $since = null)
     {
-        $this->onQueue(self::QUEUE);
+        $this->onQueue(TillQueues::name(TillQueues::PUSH));
     }
 
     /**

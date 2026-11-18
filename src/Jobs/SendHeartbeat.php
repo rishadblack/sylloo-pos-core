@@ -26,6 +26,7 @@ use Rishadblack\SyllooPosCore\Services\TableBills;
 use Rishadblack\SyllooPosCore\Services\TerminalProfile;
 use Rishadblack\SyllooPosCore\Support\AppVersion;
 use Rishadblack\SyllooPosCore\Support\DeviceState;
+use Rishadblack\SyllooPosCore\Support\TillQueues;
 use Throwable;
 
 /**
@@ -64,7 +65,7 @@ class SendHeartbeat implements ShouldBeUnique, ShouldQueue
     public function __construct(public string $reason = 'interval')
     {
         // Small and it can start a push, so it never waits behind a pull or image downloads.
-        $this->onQueue(PushErpJob::QUEUE);
+        $this->onQueue(TillQueues::name(TillQueues::PUSH));
     }
 
     /**

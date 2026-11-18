@@ -201,9 +201,35 @@ class ShiftRegister
     }
 
     /**
-     * Close the shift with the cash counted in the drawer; its figures are frozen and it goes to the ERP.
+     * Why the cash handed over to the main office at the close can not be taken, or null when it can: it is not
+     * negative and not more than the counted cash (the till has no cash drop, so the rest is the closing float).
+     * Plain values, so every till's Close shift screen checks the same before it closes.
      */
-    public function close(Shift $shift, float $countedCash, ?string $note = null): Shift
+    public function handoverProblem(float $countedCash, float $handover): ?string
+    {
+        return match (true) {
+            $handover < 0 => __('shift.handover_negative'),
+            round($handover, 2) > round($countedCash, 2) => __('shift.handover_more_than_counted'),
+            default => null,
+        };
+    }
+
+    /**
+     * The cash left in the drawer after the close: the counted cash less the handover (never below 0).
+     */
+    public function closingFloat(float $countedCash, float $handover = 0): float
+    {
+        return max(round($countedCash - max($handover, 0), 2), 0.0);
+    }
+
+    /**
+     * Close the shift with the cash counted in the drawer, of which `$handover` goes to the main office (sent with
+     * the register close, in transit there until the accountant accepts it); its figures are frozen and it goes to
+     * the ERP.
+     *
+     * @throws InvalidArgumentException when the count or the handover can not be taken (handoverProblem)
+     */
+    public function close(Shift $shift, float $countedCash, ?string $note = null, float $handover = 0): Shift
     {
         if (! $shift->isOpen()) {
             return $shift;
@@ -213,6 +239,10 @@ class ShiftRegister
             throw new InvalidArgumentException('The counted cash can not be negative.');
         }
 
+        if ($problem = $this->handoverProblem($countedCash, $handover)) {
+            throw new InvalidArgumentException($problem);
+        }
+
         $shift->closed_at = now();
         $totals = $this->summary($shift);
 
@@ -220,12 +250,41 @@ class ShiftRegister
             'totals' => $totals,
             'expected_cash' => $totals['expected_cash'],
             'counted_cash' => round($countedCash, 2),
+            'handover_amount' => round($handover, 2),
             'difference' => round($countedCash - $totals['expected_cash'], 2),
             'close_note' => filled($note) ? mb_substr(trim((string) $note), 0, 191) : null,
+            // What the office said at the opening is done with; what it says about the close is kept from here on.
+            'register_message' => $shift->register_status === RegisterSync::OPEN ? null : $shift->register_message,
         ])->save();
 
         RegisterSync::dispatch();
 
         return $shift;
+    }
+
+    /**
+     * What the office said about the last closed shift, for the Shift panel of the next shift: a refused close, a
+     * handover the office can not take yet, or the handover it took. Null when there is nothing to say.
+     */
+    public function previousShiftNotice(): ?string
+    {
+        $shift = Shift::query()->whereNotNull('closed_at')->latest('closed_at')->first();
+
+        if (! $shift) {
+            return null;
+        }
+
+        $amount = numberFormat((float) $shift->handover_amount, true);
+        $message = match (true) {
+            in_array($shift->register_status, [RegisterSync::OPEN, RegisterSync::REFUSED, RegisterSync::CLOSED], true) && filled($shift->register_message) => (string) $shift->register_message,
+            ! $shift->hasHandover() => null,
+            $shift->register_status === RegisterSync::CLOSED => filled($shift->handover_account)
+                ? __('shift.handover_sent', ['amount' => $amount, 'account' => $shift->handover_account])
+                : __('shift.handover_sent_no_account', ['amount' => $amount]),
+            $shift->register_status === RegisterSync::OPEN => __('shift.handover_waiting', ['amount' => $amount]),
+            default => null,
+        };
+
+        return $message !== null ? __('shift.previous_shift', ['number' => $shift->number, 'message' => $message]) : null;
     }
 }

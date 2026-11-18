@@ -11,6 +11,7 @@ use Rishadblack\SyllooPosCore\Jobs\PushErpJob;
 use Rishadblack\SyllooPosCore\Jobs\RegisterSync;
 use Rishadblack\SyllooPosCore\Models\Shift;
 use Rishadblack\SyllooPosCore\Models\User;
+use Rishadblack\SyllooPosCore\Support\TillQueues;
 
 /**
  * The till's steps in the shared base's release frame (plan §4.3 "Release steps": send sales first, then wipe the
@@ -52,7 +53,7 @@ class TerminalReleaseSteps implements ReleaseSteps
 
     public function sendWaitingWork(): void
     {
-        QueueWorker::up('default');
+        QueueWorker::up(TillQueues::name(TillQueues::DEFAULT));
 
         rescue(fn () => PushErpJob::dispatch(), report: false);
 
@@ -74,7 +75,7 @@ class TerminalReleaseSteps implements ReleaseSteps
 
     public function afterClean(): void
     {
-        QueueWorker::up('default');
-        QueueWorker::up('images');
+        QueueWorker::up(TillQueues::name(TillQueues::DEFAULT));
+        QueueWorker::up(TillQueues::name(TillQueues::IMAGES));
     }
 }

@@ -21,12 +21,13 @@ class AuditTrail
     /**
      * @param  array<string, mixed>  $details
      */
-    public static function record(string $action, array $details = [], ?string $reason = null, ?string $orderCode = null, ?string $approvedBy = null): void
+    public static function record(string $action, array $details = [], ?string $reason = null, ?string $orderCode = null, ?string $approvedBy = null, ?string $userId = null): void
     {
         try {
             AuditLog::query()->create([
                 'action' => $action,
-                'user_id' => Auth::id(),
+                // A till without a web session (the phone) names its cashier.
+                'user_id' => $userId ?? Auth::id(),
                 'approved_by' => $approvedBy,
                 'order_code' => $orderCode,
                 'reason' => $reason !== null ? mb_substr($reason, 0, 191) : null,

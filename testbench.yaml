@@ -6,5 +6,4 @@ providers:
   - Jantinnerezo\LivewireAlert\LivewireAlertServiceProvider
   - Rishadblack\SyllooAppBase\SyllooAppBaseServiceProvider
   - Spatie\Translatable\TranslatableServiceProvider
-  - Milon\Barcode\BarcodeServiceProvider
   - Rishadblack\SyllooPosCore\SyllooPosCoreServiceProvider

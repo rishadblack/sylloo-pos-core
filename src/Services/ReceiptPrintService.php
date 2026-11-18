@@ -2,6 +2,7 @@
 
 namespace Rishadblack\SyllooPosCore\Services;
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cache;
@@ -460,9 +461,11 @@ class ReceiptPrintService
     }
 
     /**
-     * An unsaved example order for previewing and test printing the receipt.
+     * An unsaved example order for previewing and test printing the receipt, made by the cashier given (the
+     * "Cashier" line). The PC till's Settings screen still passes none, so the signed-in user is taken then (until the
+     * PC screens move to desks, gap #5).
      */
-    public function sampleOrder(): Order
+    public function sampleOrder(?Model $cashier = null): Order
     {
         $order = new Order([
             'code' => 'POS1A2B3C4D',
@@ -481,7 +484,7 @@ class ReceiptPrintService
         $cash = new PaymentMethod(['name' => 'Cash']);
 
         $order->setRelation('contact', new Contact(['name' => 'Walk-in Customer', 'is_walk_in' => 1]));
-        $order->setRelation('creator', Auth::user());
+        $order->setRelation('creator', $cashier ?? Auth::user());
         $order->setRelation('paymentMethod', $cash);
         $order->setRelation('orderItem', collect([
             ['name' => 'Premium Green Tea', 'amount' => 120, 'quantity' => 2, 'subtotal' => 240],
@@ -509,8 +512,23 @@ class ReceiptPrintService
     }
 
     /**
+     * Picture types a receipt logo may have, by file extension: the type is read from the name, not the file
+     * (`fileinfo`, which the phone's PHP may not have).
+     *
+     * @var array<string, string>
+     */
+    public const LOGO_TYPES = [
+        'png' => 'image/png',
+        'jpg' => 'image/jpeg',
+        'jpeg' => 'image/jpeg',
+        'gif' => 'image/gif',
+        'webp' => 'image/webp',
+        'svg' => 'image/svg+xml',
+    ];
+
+    /**
      * A logo URL is used as is. A file in public/ or storage/ is inlined, because the receipt is printed from an HTML
-     * string with no base URL.
+     * string with no base URL. A file that is not a picture type of {@see self::LOGO_TYPES} is not printed.
      */
     public function printableLogo(?string $logo): ?string
     {
@@ -524,7 +542,9 @@ class ReceiptPrintService
 
         $path = collect([public_path($logo), storage_path('app/public/'.$logo)])->first(fn (string $path) => File::isFile($path));
 
-        return $path ? 'data:'.File::mimeType($path).';base64,'.base64_encode(File::get($path)) : null;
+        $type = $path ? (self::LOGO_TYPES[strtolower(pathinfo($path, PATHINFO_EXTENSION))] ?? null) : null;
+
+        return $path && $type ? 'data:'.$type.';base64,'.base64_encode(File::get($path)) : null;
     }
 
     /**

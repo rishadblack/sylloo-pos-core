@@ -5,7 +5,6 @@ namespace Rishadblack\SyllooPosCore\Tests;
 use Illuminate\Support\ServiceProvider;
 use Jantinnerezo\LivewireAlert\LivewireAlertServiceProvider;
 use Livewire\LivewireServiceProvider;
-use Milon\Barcode\BarcodeServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Rishadblack\SyllooAppBase\Contracts\DeviceStore;
 use Rishadblack\SyllooAppBase\SyllooAppBaseServiceProvider;
@@ -29,7 +28,6 @@ abstract class TestCase extends Orchestra
             LivewireAlertServiceProvider::class,
             SyllooAppBaseServiceProvider::class,
             TranslatableServiceProvider::class,
-            BarcodeServiceProvider::class,
             SyllooPosCoreServiceProvider::class,
         ];
     }

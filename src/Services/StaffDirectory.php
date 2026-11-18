@@ -81,10 +81,11 @@ class StaffDirectory
 
     /**
      * Whether the signed-in cashier may do it alone: a permission, or (with $discountPercent) a discount that large.
+     * A till without a web session (the phone) names its cashier.
      */
-    public function cashierMay(?string $permission, ?float $discountPercent = null): bool
+    public function cashierMay(?string $permission, ?float $discountPercent = null, ?User $cashier = null): bool
     {
-        $user = Auth::user();
+        $user = $cashier ?? Auth::user();
 
         if (! $user instanceof User) {
             return false;

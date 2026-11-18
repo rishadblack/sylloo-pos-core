@@ -6,6 +6,7 @@ use Illuminate\Contracts\Queue\ShouldBeUnique;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Queue\Queueable;
 use Rishadblack\SyllooPosCore\Services\StaffDirectory;
+use Rishadblack\SyllooPosCore\Support\TillQueues;
 
 /**
  * Take the staff list again (StaffDirectory): after a sign-in, on Sync now, and when the heartbeat shows another
@@ -19,7 +20,7 @@ class PullStaff implements ShouldBeUnique, ShouldQueue
 
     public function __construct()
     {
-        $this->onQueue(PullErpJob::QUEUE);
+        $this->onQueue(TillQueues::name(TillQueues::PULL));
     }
 
     public function handle(StaffDirectory $staff): void

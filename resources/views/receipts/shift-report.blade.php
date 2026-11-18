@@ -126,6 +126,11 @@
         @if ($final)
             <tr class="bold"><td>Counted cash</td><td>{{ $money($shift->counted_cash) }}</td></tr>
             <tr class="bold"><td>{{ $shift->difference < 0 ? 'Short' : ($shift->difference > 0 ? 'Over' : 'Difference') }}</td><td>{{ $money(abs((float) $shift->difference)) }}</td></tr>
+            @if ($shift->hasHandover())
+                {{-- Cash handed over to the main office at the close (ShiftRegister::close); the rest stays in the drawer. --}}
+                <tr><td>− Handed over to main office{{ filled($shift->handover_account) ? ' ('.$shift->handover_account.')' : '' }}</td><td>{{ $money($shift->handover_amount) }}</td></tr>
+                <tr class="bold"><td>Closing float</td><td>{{ $money($shift->closingFloat()) }}</td></tr>
+            @endif
         @endif
     </table>
 

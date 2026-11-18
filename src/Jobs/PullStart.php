@@ -23,6 +23,7 @@ use Rishadblack\SyllooPosCore\Services\ErpApiService;
 use Rishadblack\SyllooPosCore\Services\ErpCircuitBreaker;
 use Rishadblack\SyllooPosCore\Services\SyncErrorLog;
 use Rishadblack\SyllooPosCore\Support\RestaurantMode;
+use Rishadblack\SyllooPosCore\Support\TillQueues;
 use Throwable;
 
 class PullStart implements ShouldBeUnique, ShouldQueue
@@ -65,6 +66,13 @@ class PullStart implements ShouldBeUnique, ShouldQueue
     protected ?string $startedAt = null;
 
     /**
+     * The unique id this pull was queued with. handle() fills in the sync dates and the pricing models, and Laravel
+     * frees the unique lock under uniqueId() after the job ran: a key worked out again from the changed values would
+     * miss the lock, which would then hold every pull asked for in the next {@see self::$uniqueFor} seconds.
+     */
+    public ?string $queuedUniqueId = null;
+
+    /**
      * @param  bool  $fullPull  pull every row from the start, whatever sync dates are kept (`force_pull`)
      */
     public function __construct($date = null, $models = null, ?string $userId = null, public bool $fullPull = false)
@@ -72,8 +80,9 @@ class PullStart implements ShouldBeUnique, ShouldQueue
         $this->date = $date;
         $this->models = $models;
         $this->userId = $userId;
+        $this->queuedUniqueId = $this->uniqueId();
 
-        $this->onQueue(PullErpJob::QUEUE);
+        $this->onQueue(TillQueues::name(TillQueues::PULL));
     }
 
     /**
@@ -81,7 +90,8 @@ class PullStart implements ShouldBeUnique, ShouldQueue
      */
     public function uniqueId(): string
     {
-        return md5(json_encode([$this->models, $this->date, $this->fullPull]));
+        // A pull queued before queuedUniqueId existed has none: its key is worked out as before.
+        return $this->queuedUniqueId ?? md5(json_encode([$this->models, $this->date, $this->fullPull]));
     }
 
     /**

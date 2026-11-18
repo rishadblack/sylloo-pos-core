@@ -110,3 +110,13 @@ it('names no platform, screen framework, session or request in its code', functi
             ->not->toMatch('/\\\\(Native|Livewire)\\\\/', $path);
     }
 });
+
+it('needs no PHP extension the phone lacks and no barcode package', function () {
+    $composer = json_decode((string) File::get(__DIR__.'/../../composer.json'), true);
+    $required = array_keys($composer['require'] ?? []);
+
+    expect($required)->not->toContain('ext-gd')
+        ->not->toContain('ext-intl')
+        ->not->toContain('ext-zip')
+        ->and(array_filter($required, fn (string $package) => str_starts_with($package, 'milon/')))->toBe([]);
+});

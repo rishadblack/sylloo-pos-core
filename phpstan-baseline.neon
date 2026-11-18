@@ -319,42 +319,6 @@ parameters:
 			path: src/Jobs/RegisterSync.php
 
 		-
-			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$cash_register_id\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Jobs/RegisterSync.php
-
-		-
-			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$cash_register_session_id\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Jobs/RegisterSync.php
-
-		-
-			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$close_note\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Jobs/RegisterSync.php
-
-		-
-			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$counted_cash\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Jobs/RegisterSync.php
-
-		-
-			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$number\.$#'
-			identifier: property.notFound
-			count: 2
-			path: src/Jobs/RegisterSync.php
-
-		-
-			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$opening_float\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Jobs/RegisterSync.php
-
-		-
 			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,Rishadblack\\SyllooPosCore\\Models\\CashMovement\>\:\:mapWithKeys\(\) contains unresolvable type\.$#'
 			identifier: argument.unresolvableType
 			count: 1
@@ -1303,18 +1267,6 @@ parameters:
 			path: src/Models/PaymentMethod.php
 
 		-
-			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\PaymentMethod\:\:\$kind\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Models/PaymentMethod.php
-
-		-
-			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\PaymentMethod\:\:\$name\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Models/PaymentMethod.php
-
-		-
 			message: '#^Class Rishadblack\\SyllooPosCore\\Models\\PaymentMethod uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
 			identifier: missingType.generics
 			count: 1
@@ -1553,12 +1505,6 @@ parameters:
 			identifier: classConstant.phpDocType
 			count: 1
 			path: src/Models/Setting.php
-
-		-
-			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$closed_at\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Models/Shift.php
 
 		-
 			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Shift\:\:cashMovements\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
@@ -2371,12 +2317,6 @@ parameters:
 			path: src/Services/DeviceRelease.php
 
 		-
-			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Collection\<int, Rishadblack\\SyllooPosCore\\Models\\Shift\>\|Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$cash_register_session_id\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Services/DueCollections.php
-
-		-
 			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Contact\:\:\$is_walk_in\.$#'
 			identifier: property.notFound
 			count: 1
@@ -2971,12 +2911,6 @@ parameters:
 			path: src/Services/SaleReturns.php
 
 		-
-			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\PaymentMethod\:\:\$name\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Services/SaleReturns.php
-
-		-
 			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Transaction\:\:\$amount\.$#'
 			identifier: property.notFound
 			count: 1
@@ -3059,42 +2993,6 @@ parameters:
 			identifier: nullsafe.neverNull
 			count: 1
 			path: src/Services/SaleReturns.php
-
-		-
-			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\PaymentMethod\:\:\$name\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Services/ShiftRegister.php
-
-		-
-			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$closed_at\.$#'
-			identifier: property.notFound
-			count: 3
-			path: src/Services/ShiftRegister.php
-
-		-
-			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$opened_at\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Services/ShiftRegister.php
-
-		-
-			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$opening_float\.$#'
-			identifier: property.notFound
-			count: 2
-			path: src/Services/ShiftRegister.php
-
-		-
-			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$totals\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Services/ShiftRegister.php
-
-		-
-			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$user_id\.$#'
-			identifier: property.notFound
-			count: 2
-			path: src/Services/ShiftRegister.php
 
 		-
 			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Transaction\:\:\$payment_method_id\.$#'

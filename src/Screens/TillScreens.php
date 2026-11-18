@@ -2,7 +2,6 @@
 
 namespace Rishadblack\SyllooPosCore\Screens;
 
-use Illuminate\Http\Client\HttpClientException;
 use Rishadblack\SyllooAppBase\Contracts\DeviceMember;
 use Rishadblack\SyllooAppBase\Device\DeviceState as BaseDeviceState;
 use Rishadblack\SyllooAppBase\Device\StateDefinition;
@@ -22,7 +21,6 @@ use Rishadblack\SyllooPosCore\Models\Order;
 use Rishadblack\SyllooPosCore\Models\Shift;
 use Rishadblack\SyllooPosCore\Models\User;
 use Rishadblack\SyllooPosCore\Services\DeviceRelease;
-use Rishadblack\SyllooPosCore\Services\ErpApiService;
 use Rishadblack\SyllooPosCore\Services\ErpLicenceCheck;
 use Rishadblack\SyllooPosCore\Services\ErpOrderedReset;
 use Rishadblack\SyllooPosCore\Services\LocalDataReset;
@@ -30,6 +28,7 @@ use Rishadblack\SyllooPosCore\Services\PinSignIn;
 use Rishadblack\SyllooPosCore\Services\SyncErrorLog;
 use Rishadblack\SyllooPosCore\Support\DeviceState;
 use Rishadblack\SyllooPosCore\Support\TerminalDeviceState;
+use Rishadblack\SyllooPosCore\Support\TillQueues;
 
 /**
  * A till's parts of the shared screens (rishadblack/sylloo-app-base, nativephp-plan §4.4): Activate, Sign in, PIN
@@ -39,7 +38,8 @@ use Rishadblack\SyllooPosCore\Support\TerminalDeviceState;
  *
  * - Activate: the queue counts in the body; "Reset terminal for the new code?" before a code of another activation (the
  *   owner rule of 2026-10-26), the wipe only once the office accepted; an answer without the terminal is refused; the
- *   terminal setup after keeping it; "Terminal activated" on Continue; `released` after "Use another code"; every
+ *   terminal setup after keeping it; "Terminal activated" on Continue; "Use another code" is the base's full release
+ *   (TerminalReleaseSteps: sales first, then the wipe and `released`); every
  *   refusal in the sync error log.
  * - Sign in and PIN: a tap asks the office for the PIN hash (`GET me`); a kept browser sign-in pulls the staff list; a
  *   released device starts its release, a blocked one shows its state screen; the till signs the cashier in itself.
@@ -95,8 +95,8 @@ class TillScreens
             DeviceState::rememberOutletReady($answer['terminal']['outlet_ready'] ?? null);
             Order::rememberTerminalSerial($answer['terminal']['terminal_serial'] ?? null);
 
-            QueueWorker::up('default');
-            QueueWorker::up('images');
+            QueueWorker::up(TillQueues::name(TillQueues::DEFAULT));
+            QueueWorker::up(TillQueues::name(TillQueues::IMAGES));
 
             PullTerminalProfile::dispatch();
             SendHeartbeat::dispatchDebounced('reconnect');
@@ -107,13 +107,7 @@ class TillScreens
 
         $hooks->step('activate.continue', fn () => $this->face->noticeOnNextPage(__('device.activated_title'), __('device.activated_text')));
 
-        $hooks->step('use_another_code', function (): void {
-            try {
-                (new ErpApiService)->released();
-            } catch (HttpClientException) {
-                // Offline: the office removes a device nobody signed in on by itself after a day.
-            }
-        });
+        // "Use another code" runs the full release (base 1.2.0): the sales go up first, then the wipe, then `released`.
 
         $hooks->refused(function (array $refusal): void {
             if ($refusal['call'] !== 'activate') {
@@ -151,7 +145,7 @@ class TillScreens
 
         // The staff list brings the PIN hashes and permissions of this terminal's people.
         $hooks->step('sign_in.kept', function (): void {
-            QueueWorker::up('default');
+            QueueWorker::up(TillQueues::name(TillQueues::DEFAULT));
             PullStaff::dispatch();
         });
 
@@ -160,7 +154,7 @@ class TillScreens
 
             $this->face->signIn($member);
 
-            QueueWorker::up('default');
+            QueueWorker::up(TillQueues::name(TillQueues::DEFAULT));
 
             // The cashier's "last synced" time is set by the pull once every page has been saved.
             PullStart::dispatch(userId: (string) $member->getKey());

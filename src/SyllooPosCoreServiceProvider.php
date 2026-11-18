@@ -15,13 +15,17 @@ use Rishadblack\SyllooAppBase\Pin\PinSignIn as BasePinSignIn;
 use Rishadblack\SyllooAppBase\Release\DeviceRelease as BaseDeviceRelease;
 use Rishadblack\SyllooAppBase\Update\AppUpdateService as BaseAppUpdateService;
 use Rishadblack\SyllooPosCore\Contracts\CustomerDisplayScreen;
+use Rishadblack\SyllooPosCore\Contracts\DrawerKick;
 use Rishadblack\SyllooPosCore\Contracts\QueueWorkers;
+use Rishadblack\SyllooPosCore\Contracts\ReceiptBarcode;
 use Rishadblack\SyllooPosCore\Contracts\ReceiptPrinter;
 use Rishadblack\SyllooPosCore\Contracts\TillSettings;
 use Rishadblack\SyllooPosCore\Defaults\ArrayTillSettings;
+use Rishadblack\SyllooPosCore\Defaults\Code128ReceiptBarcode;
 use Rishadblack\SyllooPosCore\Defaults\NullCustomerDisplayScreen;
 use Rishadblack\SyllooPosCore\Defaults\NullQueueWorkers;
 use Rishadblack\SyllooPosCore\Defaults\NullReceiptPrinter;
+use Rishadblack\SyllooPosCore\Defaults\WindowsRawDrawerKick;
 use Rishadblack\SyllooPosCore\Models\Product;
 use Rishadblack\SyllooPosCore\Models\ProductPricing;
 use Rishadblack\SyllooPosCore\Models\Unit;
@@ -42,9 +46,10 @@ use Rishadblack\SyllooPosCore\Support\TerminalDeviceState;
  * `sylloo-app-base::device.*`), in English and Bangla; the till's answers to the shared base that every till shares.
  *
  * Each till binds its own platform in its own service provider: the base's DeviceStore, Notifier and AppUpdater, and
- * this package's Contracts\TillSettings, Contracts\QueueWorkers, Contracts\ReceiptPrinter and
- * Contracts\CustomerDisplayScreen; and it registers Screens\TillScreens with its Contracts\TillScreenFace. Unbound,
- * the defaults keep settings in memory and print, show and start nothing.
+ * this package's Contracts\TillSettings, Contracts\QueueWorkers, Contracts\ReceiptPrinter,
+ * Contracts\CustomerDisplayScreen and Contracts\DrawerKick (and Contracts\ReceiptBarcode to draw its own); and it
+ * registers Screens\TillScreens with its Contracts\TillScreenFace. Unbound, the defaults keep settings in memory,
+ * print, show and start nothing, draw receipts' Code 128 and kick the drawer through the Windows print spooler.
  */
 class SyllooPosCoreServiceProvider extends ServiceProvider
 {
@@ -56,6 +61,8 @@ class SyllooPosCoreServiceProvider extends ServiceProvider
         $this->app->bindIf(QueueWorkers::class, NullQueueWorkers::class, true);
         $this->app->bindIf(ReceiptPrinter::class, NullReceiptPrinter::class, true);
         $this->app->bindIf(CustomerDisplayScreen::class, NullCustomerDisplayScreen::class, true);
+        $this->app->bindIf(ReceiptBarcode::class, Code128ReceiptBarcode::class, true);
+        $this->app->bindIf(DrawerKick::class, WindowsRawDrawerKick::class, true);
 
         $this->answerTheSharedBase();
 

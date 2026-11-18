@@ -15,6 +15,7 @@ use Rishadblack\SyllooPosCore\Models\Order;
 use Rishadblack\SyllooPosCore\Models\Shift;
 use Rishadblack\SyllooPosCore\Models\User;
 use Rishadblack\SyllooPosCore\Services\ErpApiService;
+use Rishadblack\SyllooPosCore\Support\TillQueues;
 use Throwable;
 
 /**
@@ -24,7 +25,8 @@ use Throwable;
  * 1. a new shift opens the terminal's register in the ERP with its float (`register/open`);
  * 2. cash put in or taken out goes up as `CashMovement`, against the shift's register session;
  * 3. a closed shift closes the register with the counted cash (`register/close`), once its sales and cash movements
- *    are in the ERP, so the ERP's expected cash has them.
+ *    are in the ERP, so the ERP's expected cash has them; cash handed over to the main office goes with it
+ *    (`handover_amount`, ../sylloo-erp-docs/erp/cash-handover.md "From the till's Close shift").
  *
  * Each run closes the earlier shifts before it opens new ones, and a new shift never adopts a session another shift
  * of this till still holds (`register_already_open`): it waits until that shift has closed it.
@@ -48,11 +50,17 @@ class RegisterSync implements ShouldBeUnique, ShouldQueue
     /** The ERP refused to open or close the register (no right, a business rule); said on the Shift panel. */
     public const REFUSED = 'refused';
 
+    /**
+     * The office can not take a handover until the accountant sets an account in Ledger Settings: the close is kept
+     * and tried again.
+     */
+    public const HANDOVER_WAITS = ['cash_in_transit_not_set', 'main_cash_not_set'];
+
     public int $uniqueFor = 60;
 
     public function __construct()
     {
-        $this->onQueue(PushErpJob::QUEUE);
+        $this->onQueue(TillQueues::name(TillQueues::PUSH));
     }
 
     /**
@@ -189,23 +197,59 @@ class RegisterSync implements ShouldBeUnique, ShouldQueue
             return;
         }
 
-        $response = $erp->registerClose([
+        $handover = round((float) $shift->handover_amount, 2);
+        $response = $erp->registerClose(array_filter([
             'cash_register_session_id' => (string) $shift->cash_register_session_id,
             'counted_cash' => round((float) $shift->counted_cash, 2),
+            // Cash handed over to the main office (../sylloo-erp-docs/erp/cash-handover.md "From the till's Close shift").
+            'handover_amount' => $handover > 0 ? $handover : null,
             'closing_note' => $shift->close_note ?: 'Till shift '.$shift->number.' closed',
-        ]);
+        ], fn ($value) => $value !== null));
+
+        $code = $this->code($response);
 
         match (true) {
             $response->successful() => $shift->forceFill([
                 'register_status' => self::CLOSED,
-                'register_message' => null,
+                'register_message' => $this->handoverNotTaken($shift, $response),
+                'handover_account' => $this->handoverAccount($response),
                 'erp_expected_cash' => $response->json('data.session.expected'),
                 'erp_difference' => $response->json('data.session.difference'),
             ])->save(),
-            $this->code($response) === 'register_closed' => $shift->forceFill(['register_status' => self::CLOSED, 'register_message' => 'The register was already closed in the office.'])->save(),
-            in_array($this->code($response), ['not_allowed', 'refused', 'invalid', 'register_not_found'], true) => $shift->forceFill(['register_status' => self::REFUSED, 'register_message' => $this->message($response, 'The office did not close the register; close it there.')])->save(),
+            // Closed before (a reply that was lost): the office answers with the session, its handover included.
+            $code === 'register_closed' => $shift->forceFill([
+                'register_status' => self::CLOSED,
+                'register_message' => 'The register was already closed in the office.',
+                'handover_account' => $this->handoverAccount($response),
+            ])->save(),
+            // The office can not take the handover until the accountant sets an account: nothing is closed there,
+            // the close is tried again on the next run (the next shift waits for this one).
+            in_array($code, self::HANDOVER_WAITS, true) => $shift->forceFill(['register_message' => $this->message($response, __('shift.'.$code))])->save(),
+            $code === 'handover_too_large' => $shift->forceFill(['register_status' => self::REFUSED, 'register_message' => $this->message($response, __('shift.handover_too_large'))])->save(),
+            in_array($code, ['not_allowed', 'refused', 'invalid', 'register_not_found'], true) => $shift->forceFill(['register_status' => self::REFUSED, 'register_message' => $this->message($response, 'The office did not close the register; close it there.')])->save(),
             default => null,
         };
+    }
+
+    /**
+     * The main-office cash account the office booked the handover to (`data.session.handover.to_account`).
+     */
+    protected function handoverAccount(Response $response): ?string
+    {
+        $account = $response->json('data.session.handover.to_account');
+
+        return is_string($account) && $account !== '' ? mb_substr($account, 0, 191) : null;
+    }
+
+    /**
+     * A handover was sent, the office closed the register but its answer has none (an office that does not know
+     * handovers yet): the cashier is told to hand the cash over by hand.
+     */
+    protected function handoverNotTaken(Shift $shift, Response $response): ?string
+    {
+        return $shift->hasHandover() && ! is_array($response->json('data.session.handover'))
+            ? __('shift.handover_not_taken', ['amount' => numberFormat((float) $shift->handover_amount, true)])
+            : null;
     }
 
     protected function code(Response $response): ?string

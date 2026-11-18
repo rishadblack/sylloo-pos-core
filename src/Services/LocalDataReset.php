@@ -13,6 +13,7 @@ use Rishadblack\SyllooPosCore\Facades\QueueWorker;
 use Rishadblack\SyllooPosCore\Facades\Settings;
 use Rishadblack\SyllooPosCore\Models\Setting;
 use Rishadblack\SyllooPosCore\Support\DeviceState;
+use Rishadblack\SyllooPosCore\Support\TillQueues;
 
 /**
  * Starts the terminal fresh for a new license: every local record, the cache, cached ERP images, the shop's own files
@@ -25,7 +26,8 @@ use Rishadblack\SyllooPosCore\Support\DeviceState;
 class LocalDataReset
 {
     /**
-     * Queue workers stopped before the wipe (see config/nativephp.php).
+     * Queue workers stopped before the wipe on the PC till (see config/nativephp.php); the names come from
+     * `sylloo-pos-core.queues` ({@see TillQueues::workers()}).
      *
      * @var list<string>
      */
@@ -66,6 +68,19 @@ class LocalDataReset
     public const COMPUTER_NATIVE_SETTINGS = [DeviceState::DEVICE_UID_SETTING, 'locale'];
 
     /**
+     * The tables a fresh start leaves as they are (`sylloo-pos-core.reset.kept_tables`): always `migrations`; the
+     * Android till adds its device store (`phone_settings`), which holds the activation.
+     *
+     * @return list<string>
+     */
+    public static function keptTables(): array
+    {
+        $tables = array_filter((array) config('sylloo-pos-core.reset.kept_tables', ['migrations']), fn (mixed $table) => is_string($table) && $table !== '');
+
+        return array_values(array_unique(['migrations', ...$tables]));
+    }
+
+    /**
      * True when the terminal still holds records of a business.
      */
     public static function hasLocalData(): bool
@@ -86,7 +101,7 @@ class LocalDataReset
     {
         $kept = $keepComputerSettings ? $this->computerSettings() : null;
 
-        foreach (self::QUEUE_WORKERS as $worker) {
+        foreach (TillQueues::workers() as $worker) {
             rescue(fn () => QueueWorker::down($worker), report: false);
         }
 
@@ -98,8 +113,10 @@ class LocalDataReset
         Schema::disableForeignKeyConstraints();
 
         try {
+            $keptTables = self::keptTables();
+
             foreach (Schema::getTableListing(schemaQualified: false) as $table) {
-                if ($table !== 'migrations' && ! str_starts_with($table, 'sqlite_')) {
+                if (! in_array($table, $keptTables, true) && ! str_starts_with($table, 'sqlite_')) {
                     DB::table($table)->delete();
                 }
             }

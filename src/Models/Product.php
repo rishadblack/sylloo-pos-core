@@ -100,9 +100,30 @@ class Product extends Model
             return null;
         }
 
-        // The code, else a barcode by its index (audit M4); a till not indexed yet looks through the barcodes.
-        return static::active()->where('products.code', $code)->first()
-            ?? static::active()->whereIn('products.id', DB::table('product_barcodes')->where('code', $code)->select('product_id'))->first()
+        // The code, else a barcode.
+        return static::active()->where('products.code', $code)->first() ?? static::findByBarcode($code);
+    }
+
+    /**
+     * The product a scanner read (a typing scanner or the camera): any of its barcodes first, then its product code, so
+     * a printed barcode wins over a product code that happens to look the same. A variant has its own barcodes and is
+     * its own product (`parent_id`), so its barcode finds the variant itself. From the Android till (SaleDesk).
+     */
+    public static function findByScannedBarcode(string $code): ?self
+    {
+        $code = trim($code);
+
+        if ($code === '') {
+            return null;
+        }
+
+        return static::findByBarcode($code) ?? static::active()->where('products.code', $code)->first();
+    }
+
+    protected static function findByBarcode(string $code): ?self
+    {
+        // A barcode by its index (audit M4); a till not indexed yet looks through the barcodes.
+        return static::active()->whereIn('products.id', DB::table('product_barcodes')->where('code', $code)->select('product_id'))->first()
             ?? static::active()
                 ->whereNull('products.search_text')
                 ->where('products.barcodes', 'like', '%'.json_encode($code, JSON_UNESCAPED_UNICODE).'%')

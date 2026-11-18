@@ -2,6 +2,11 @@
 
 All notable changes to `rishadblack/sylloo-pos-core` are documented in this file.
 
+## 1.0.1 - 2026-11-18
+
+- The release now ships `resources/lang/vendor/sylloo-app-base` (the till's own words for the shared device screens).
+  `.gitignore` had hidden it with a bare `vendor` line; it now ignores only the top `/vendor`.
+
 ## 1.0.0 - 2026-11-18
 
 - First version: moved from the Sylloo POS PC till without a change of behaviour (T1, 2026-11-18). The till's models,

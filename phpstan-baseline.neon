@@ -1,0 +1,3523 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Broadcasting\\JobFinished\:\:__construct\(\) has parameter \$jobId with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Broadcasting/JobFinished.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Broadcasting\\JobFinished\:\:__construct\(\) has parameter \$status with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Broadcasting/JobFinished.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Broadcasting\\JobFinished\:\:broadcastWith\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Broadcasting/JobFinished.php
+
+		-
+			message: '#^Property Rishadblack\\SyllooPosCore\\Broadcasting\\JobFinished\:\:\$jobId has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/Broadcasting/JobFinished.php
+
+		-
+			message: '#^Property Rishadblack\\SyllooPosCore\\Broadcasting\\JobFinished\:\:\$status has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/Broadcasting/JobFinished.php
+
+		-
+			message: '#^Call to an undefined static method Illuminate\\Database\\Eloquent\\Model\:\:cachedImageColumns\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Jobs/CacheErpImages.php
+
+		-
+			message: '#^Call to an undefined static method Illuminate\\Database\\Eloquent\\Model\:\:cachedImageLists\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: src/Jobs/CacheErpImages.php
+
+		-
+			message: '#^Call to an undefined static method Illuminate\\Database\\Eloquent\\Model\:\:cachedImages\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: src/Jobs/CacheErpImages.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Jobs\\CacheErpImages\:\:__construct\(\) has parameter \$ids with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Jobs/CacheErpImages.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Jobs\\PullErpJob\:\:__construct\(\) has parameter \$action with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Jobs/PullErpJob.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Jobs\\PullErpJob\:\:__construct\(\) has parameter \$date with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Jobs/PullErpJob.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Jobs\\PullErpJob\:\:__construct\(\) has parameter \$models with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Jobs/PullErpJob.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Jobs\\PullErpJob\:\:__construct\(\) has parameter \$page with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Jobs/PullErpJob.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Jobs\\PullErpJob\:\:saveModelData\(\) has parameter \$records with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Jobs/PullErpJob.php
+
+		-
+			message: '#^Parameter \#1 \$array \(non\-empty\-list\<string\>\) of array_values is already a list, call has no effect\.$#'
+			identifier: arrayValues.list
+			count: 1
+			path: src/Jobs/PullErpJob.php
+
+		-
+			message: '#^Property Rishadblack\\SyllooPosCore\\Jobs\\PullErpJob\:\:\$action has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/Jobs/PullErpJob.php
+
+		-
+			message: '#^Property Rishadblack\\SyllooPosCore\\Jobs\\PullErpJob\:\:\$date has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/Jobs/PullErpJob.php
+
+		-
+			message: '#^Property Rishadblack\\SyllooPosCore\\Jobs\\PullErpJob\:\:\$models has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/Jobs/PullErpJob.php
+
+		-
+			message: '#^Property Rishadblack\\SyllooPosCore\\Jobs\\PullErpJob\:\:\$page has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/Jobs/PullErpJob.php
+
+		-
+			message: '#^Property Rishadblack\\SyllooPosCore\\Jobs\\PullErpJob\:\:\$tableColumnsCache type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Jobs/PullErpJob.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Jobs\\PullStart\:\:__construct\(\) has parameter \$date with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Jobs/PullStart.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Jobs\\PullStart\:\:__construct\(\) has parameter \$models with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Jobs/PullStart.php
+
+		-
+			message: '#^Property Rishadblack\\SyllooPosCore\\Jobs\\PullStart\:\:\$date has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/Jobs/PullStart.php
+
+		-
+			message: '#^Property Rishadblack\\SyllooPosCore\\Jobs\\PullStart\:\:\$models has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/Jobs/PullStart.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$contact\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Jobs/PushErpJob.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Jobs/PushErpJob.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$ref\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Jobs/PushErpJob.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$serial_tracking\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Jobs/PushErpJob.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$sync_attempts\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Jobs/PushErpJob.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$code\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Jobs/PushErpJob.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$dining_table_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Jobs/PushErpJob.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$pay_change_amount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Jobs/PushErpJob.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$sync_response\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Jobs/PushErpJob.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Jobs\\PushErpJob\:\:pendingCollectionsQuery\(\) return type with generic class Illuminate\\Database\\Eloquent\\Builder does not specify its types\: TModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Jobs/PushErpJob.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Jobs\\PushErpJob\:\:pendingQuery\(\) return type with generic class Illuminate\\Database\\Eloquent\\Builder does not specify its types\: TModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Jobs/PushErpJob.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Jobs\\PushErpJob\:\:wherePending\(\) has parameter \$query with generic class Illuminate\\Database\\Eloquent\\Builder but does not specify its types\: TModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Jobs/PushErpJob.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Jobs\\PushErpJob\:\:wherePending\(\) return type with generic class Illuminate\\Database\\Eloquent\\Builder does not specify its types\: TModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Jobs/PushErpJob.php
+
+		-
+			message: '#^Parameter \#1 \$Order of static method Rishadblack\\SyllooPosCore\\Jobs\\PushErpJob\:\:itemRows\(\) expects Rishadblack\\SyllooPosCore\\Models\\Order, Illuminate\\Database\\Eloquent\\Model given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Jobs/PushErpJob.php
+
+		-
+			message: '#^Parameter \#1 \$Order of static method Rishadblack\\SyllooPosCore\\Jobs\\PushErpJob\:\:paymentWithoutChange\(\) expects Rishadblack\\SyllooPosCore\\Models\\Order, Illuminate\\Database\\Eloquent\\Model given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Jobs/PushErpJob.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,Illuminate\\Database\\Eloquent\\Model\>\:\:mapWithKeys\(\) expects callable\(Illuminate\\Database\\Eloquent\\Model, int\)\: array\<string, array\{DueCollection\: array\<string, mixed\>, Payment\: list\<array\<string, mixed\>\>\}\>, Closure\(Rishadblack\\SyllooPosCore\\Models\\Order\)\: non\-empty\-array\<string, array\{DueCollection\: array\<string, mixed\>, Payment\: list\<array\<string, mixed\>\>\}\> given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Jobs/PushErpJob.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Support\\Collection\<int,Illuminate\\Database\\Eloquent\\Model\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: src/Jobs/PushErpJob.php
+
+		-
+			message: '#^Parameter \#1 \$orders of method Rishadblack\\SyllooPosCore\\Jobs\\PushErpJob\:\:keepPendingUntilOutletIsSet\(\) expects Illuminate\\Database\\Eloquent\\Collection\<int, Rishadblack\\SyllooPosCore\\Models\\Order\>, Illuminate\\Database\\Eloquent\\Collection\<int, Illuminate\\Database\\Eloquent\\Model\> given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Jobs/PushErpJob.php
+
+		-
+			message: '#^Parameter \#1 \$orders of method Rishadblack\\SyllooPosCore\\Jobs\\PushErpJob\:\:notifyNewlyRejected\(\) expects Illuminate\\Support\\Collection\<int, Rishadblack\\SyllooPosCore\\Models\\Order\>, Illuminate\\Database\\Eloquent\\Collection\<int, Illuminate\\Database\\Eloquent\\Model\> given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Jobs/PushErpJob.php
+
+		-
+			message: '#^Return type of call to method Illuminate\\Support\\Collection\<int,Illuminate\\Database\\Eloquent\\Model\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: method.unresolvableReturnType
+			count: 1
+			path: src/Jobs/PushErpJob.php
+
+		-
+			message: '#^Return type of call to method Illuminate\\Support\\Collection\<int,array\<string, mixed\>\>\:\:all\(\) contains unresolvable type\.$#'
+			identifier: method.unresolvableReturnType
+			count: 1
+			path: src/Jobs/PushErpJob.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$cash_register_session_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Jobs/RegisterSync.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Jobs/RegisterSync.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$register_status\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Jobs/RegisterSync.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\CashMovement\:\:\$amount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Jobs/RegisterSync.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\CashMovement\:\:\$created_at\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Jobs/RegisterSync.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\CashMovement\:\:\$daily_category_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Jobs/RegisterSync.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\CashMovement\:\:\$reason\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Jobs/RegisterSync.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\CashMovement\:\:\$type\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Jobs/RegisterSync.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$cash_register_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Jobs/RegisterSync.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$cash_register_session_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Jobs/RegisterSync.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$close_note\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Jobs/RegisterSync.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$counted_cash\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Jobs/RegisterSync.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$number\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Jobs/RegisterSync.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$opening_float\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Jobs/RegisterSync.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,Rishadblack\\SyllooPosCore\\Models\\CashMovement\>\:\:mapWithKeys\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: src/Jobs/RegisterSync.php
+
+		-
+			message: '#^Return type of call to method Illuminate\\Database\\Eloquent\\Collection\<int,Rishadblack\\SyllooPosCore\\Models\\CashMovement\>\:\:mapWithKeys\(\) contains unresolvable type\.$#'
+			identifier: method.unresolvableReturnType
+			count: 1
+			path: src/Jobs/RegisterSync.php
+
+		-
+			message: '#^Return type of call to method Illuminate\\Support\\Collection\<int,array\<string, array\<string, mixed\>\>\>\:\:all\(\) contains unresolvable type\.$#'
+			identifier: method.unresolvableReturnType
+			count: 1
+			path: src/Jobs/RegisterSync.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\SyncError\:\:\$code\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Jobs/SendHeartbeat.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\SyncError\:\:\$message\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Jobs/SendHeartbeat.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\SyncError\:\:\$occurred_at\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Jobs/SendHeartbeat.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\SyncError\:\:\$order_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Jobs/SendHeartbeat.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\SyncError\:\:\$type\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Jobs/SendHeartbeat.php
+
+		-
+			message: '#^Call to function in_array\(\) with arguments ''failure''\|''interval''\|''reconnect''\|''start'', array\{''start'', ''interval'', ''reconnect'', ''failure''\} and true will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: src/Jobs/SendHeartbeat.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Support\\Collection\<int,Rishadblack\\SyllooPosCore\\Models\\SyncError\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: src/Jobs/SendHeartbeat.php
+
+		-
+			message: '#^Return type of call to method Illuminate\\Support\\Collection\<int,Rishadblack\\SyllooPosCore\\Models\\SyncError\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: method.unresolvableReturnType
+			count: 1
+			path: src/Jobs/SendHeartbeat.php
+
+		-
+			message: '#^Return type of call to method Illuminate\\Support\\Collection\<int,array\<string, mixed\>\>\:\:all\(\) contains unresolvable type\.$#'
+			identifier: method.unresolvableReturnType
+			count: 1
+			path: src/Jobs/SendHeartbeat.php
+
+		-
+			message: '#^Return type of call to method Illuminate\\Support\\Collection\<int,array\<string, mixed\>\>\:\:values\(\) contains unresolvable type\.$#'
+			identifier: method.unresolvableReturnType
+			count: 1
+			path: src/Jobs/SendHeartbeat.php
+
+		-
+			message: '#^Unable to resolve the template type TKey in call to function collect$#'
+			identifier: argument.templateType
+			count: 1
+			path: src/Jobs/SendHeartbeat.php
+
+		-
+			message: '#^Unable to resolve the template type TValue in call to function collect$#'
+			identifier: argument.templateType
+			count: 1
+			path: src/Jobs/SendHeartbeat.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\AddonGroup\:\:\$category_ids\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/AddonGroup.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\AddonGroup\:\:\$items\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/AddonGroup.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\AddonGroup\:\:\$product_ids\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/AddonGroup.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$parent_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/AddonGroup.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\AddonGroup\:\:forProduct\(\) should return Illuminate\\Database\\Eloquent\\Collection\<int, Rishadblack\\SyllooPosCore\\Models\\AddonGroup\> but returns Illuminate\\Database\\Eloquent\\Collection\<int, static\(Rishadblack\\SyllooPosCore\\Models\\AddonGroup\)\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Models/AddonGroup.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\AddonGroup\:\:scopeActive\(\) has parameter \$query with generic class Illuminate\\Database\\Eloquent\\Builder but does not specify its types\: TModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/AddonGroup.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Brand\:\:\$display_image\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/Brand.php
+
+		-
+			message: '#^Class Rishadblack\\SyllooPosCore\\Models\\Brand uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Brand.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Brand\:\:displayImage\(\) return type with generic class Illuminate\\Database\\Eloquent\\Casts\\Attribute does not specify its types\: TGet, TSet$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Brand.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Brand\:\:displayThumb\(\) return type with generic class Illuminate\\Database\\Eloquent\\Casts\\Attribute does not specify its types\: TGet, TSet$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Brand.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Brand\:\:products\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Brand.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Brand\:\:scopeActive\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Brand.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Brand\:\:scopeActive\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Brand.php
+
+		-
+			message: '#^Property Rishadblack\\SyllooPosCore\\Models\\Brand\:\:\$translatable has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/Models/Brand.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\CashMovement\:\:shift\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/CashMovement.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Category\:\:\$display_image\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/Category.php
+
+		-
+			message: '#^Class Rishadblack\\SyllooPosCore\\Models\\Category uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Category.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Category\:\:displayImage\(\) return type with generic class Illuminate\\Database\\Eloquent\\Casts\\Attribute does not specify its types\: TGet, TSet$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Category.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Category\:\:displayThumb\(\) return type with generic class Illuminate\\Database\\Eloquent\\Casts\\Attribute does not specify its types\: TGet, TSet$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Category.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Category\:\:parent\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Category.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Category\:\:scopeActive\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Category.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Category\:\:scopeActive\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Category.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Category\:\:scopeFeatured\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Category.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Category\:\:scopeFeatured\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Category.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Category\:\:scopeRoot\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Category.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Category\:\:scopeRoot\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Category.php
+
+		-
+			message: '#^Property Rishadblack\\SyllooPosCore\\Models\\Category\:\:\$translatable has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/Models/Category.php
+
+		-
+			message: '#^Class Rishadblack\\SyllooPosCore\\Models\\Contact uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Contact.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Contact\:\:country\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Contact.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Contact\:\:deliveryCountry\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Contact.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Contact\:\:deliveryState\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Contact.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Contact\:\:generateCode\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Contact.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Contact\:\:generateOfflineContactCode\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Contact.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Contact\:\:orders\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Contact.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Contact\:\:scopeActive\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Contact.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Contact\:\:scopeActive\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Contact.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Contact\:\:scopeCustomer\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Contact.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Contact\:\:scopeCustomer\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Contact.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Contact\:\:scopeIsCurrent\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Contact.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Contact\:\:scopeIsCurrent\(\) has parameter \$builder with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Contact.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Contact\:\:scopeSupplier\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Contact.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Contact\:\:scopeSupplier\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Contact.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Contact\:\:scopewalkIn\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Contact.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Contact\:\:scopewalkIn\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Contact.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Contact\:\:setAdditionalConditionOnSerial\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Contact.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Contact\:\:setAdditionalConditionOnSerial\(\) has parameter \$model with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Contact.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Contact\:\:setAdditionalConditionOnSerial\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Contact.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Contact\:\:state\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Contact.php
+
+		-
+			message: '#^Class Rishadblack\\SyllooPosCore\\Models\\ContactGroup uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/ContactGroup.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\ContactGroup\:\:scopeActive\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/ContactGroup.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\ContactGroup\:\:scopeActive\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/ContactGroup.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\ContactGroup\:\:scopeCustomerGroup\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/ContactGroup.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\ContactGroup\:\:scopeCustomerGroup\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/ContactGroup.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\ContactGroup\:\:scopeDefault\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/ContactGroup.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\ContactGroup\:\:scopeDefault\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/ContactGroup.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\ContactGroup\:\:scopeSupplierGroup\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/ContactGroup.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\ContactGroup\:\:scopeSupplierGroup\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/ContactGroup.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\ContactGroup\:\:setAdditionalConditionOnSerial\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/ContactGroup.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\ContactGroup\:\:setAdditionalConditionOnSerial\(\) has parameter \$model with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/ContactGroup.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\ContactGroup\:\:setAdditionalConditionOnSerial\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/ContactGroup.php
+
+		-
+			message: '#^Property Rishadblack\\SyllooPosCore\\Models\\ContactGroup\:\:\$translatable has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/Models/ContactGroup.php
+
+		-
+			message: '#^Class Rishadblack\\SyllooPosCore\\Models\\Country uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Country.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\DailyCategory\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/DailyCategory.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\DailyCategory\:\:scopeUsable\(\) has parameter \$query with generic class Illuminate\\Database\\Eloquent\\Builder but does not specify its types\: TModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/DailyCategory.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\DiningTable\:\:scopeUsable\(\) has parameter \$query with generic class Illuminate\\Database\\Eloquent\\Builder but does not specify its types\: TModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/DiningTable.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\KitchenTicket\:\:order\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/KitchenTicket.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\KitchenTicket\:\:scopeFailed\(\) has parameter \$query with generic class Illuminate\\Database\\Eloquent\\Builder but does not specify its types\: TModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/KitchenTicket.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\KitchenTicket\:\:scopeUnprinted\(\) has parameter \$query with generic class Illuminate\\Database\\Eloquent\\Builder but does not specify its types\: TModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/KitchenTicket.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$last_sync_at\.$#'
+			identifier: property.notFound
+			count: 3
+			path: src/Models/Order.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$ready_for_sync_at\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Models/Order.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$serial\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$status\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$sync_code\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Models/Order.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$sync_issues\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$sync_response\.$#'
+			identifier: property.notFound
+			count: 3
+			path: src/Models/Order.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$sync_retry_at\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$sync_status\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$sync_warnings\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$type\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Models/Order.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Unit\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Models/Order.php
+
+		-
+			message: '#^Class Rishadblack\\SyllooPosCore\\Models\\Order uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:contact\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:creator\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:exchangeReturn\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:generateCode\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:generateOfflineOrderCode\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:lastTransaction\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasOne does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:orderItem\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:paymentMethod\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:returnOf\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeActive\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeActive\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeDraft\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeDraft\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeDue\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeDue\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeEcommerce\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeEcommerce\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeHeldOnly\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeHeldOnly\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeLastThirtyDays\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeLastThirtyDays\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeNotDraft\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeNotDraft\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopePurchase\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopePurchase\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopePurchaseReturn\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopePurchaseReturn\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeSale\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeSale\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeSaleReturn\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeSaleReturn\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeSalesDue\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeSalesDue\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeSyncFailed\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeSyncFailed\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeSyncPending\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeSyncPending\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeSyncUploading\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeSyncUploading\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeTableBill\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:scopeTableBill\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:setAdditionalConditionOnSerial\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:setAdditionalConditionOnSerial\(\) has parameter \$model with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:setAdditionalConditionOnSerial\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:shippingtMethod\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Order\:\:transaction\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Order.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/OrderItem.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$unit_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/OrderItem.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\OrderItem\:\:\$unit_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/OrderItem.php
+
+		-
+			message: '#^Class Rishadblack\\SyllooPosCore\\Models\\OrderItem uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/OrderItem.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\OrderItem\:\:order\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/OrderItem.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\OrderItem\:\:product\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/OrderItem.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\OrderItem\:\:scopeActive\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/OrderItem.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\OrderItem\:\:scopeActive\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/OrderItem.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\OrderItem\:\:unit\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/OrderItem.php
+
+		-
+			message: '#^Property Rishadblack\\SyllooPosCore\\Models\\OrderItem\:\:\$translatable has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/Models/OrderItem.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>name" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: src/Models/OrderItem.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>unit_id" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: src/Models/OrderItem.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\PaymentMethod\:\:\$charge\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/PaymentMethod.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\PaymentMethod\:\:\$display_image\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/PaymentMethod.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\PaymentMethod\:\:\$is_cash\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/PaymentMethod.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\PaymentMethod\:\:\$kind\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/PaymentMethod.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\PaymentMethod\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/PaymentMethod.php
+
+		-
+			message: '#^Class Rishadblack\\SyllooPosCore\\Models\\PaymentMethod uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/PaymentMethod.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\PaymentMethod\:\:displayImage\(\) return type with generic class Illuminate\\Database\\Eloquent\\Casts\\Attribute does not specify its types\: TGet, TSet$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/PaymentMethod.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\PaymentMethod\:\:displayThumb\(\) return type with generic class Illuminate\\Database\\Eloquent\\Casts\\Attribute does not specify its types\: TGet, TSet$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/PaymentMethod.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\PaymentMethod\:\:scopeActive\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/PaymentMethod.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\PaymentMethod\:\:scopeActive\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/PaymentMethod.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\PosStaff\:\:\$permissions\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/PosStaff.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\PosStaff\:\:\$pin_hash\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Models/PosStaff.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$barcodes\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$display_image\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$image_paths\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$images\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$is_batch\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$is_inventory_disable\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Models/Product.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$is_kit\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$is_serialize\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$kit_components\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$warranty_type\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Models/Product.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$warranty_value\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Models/Product.php
+
+		-
+			message: '#^Class Rishadblack\\SyllooPosCore\\Models\\Product uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Product\:\:brand\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Product\:\:displayImage\(\) return type with generic class Illuminate\\Database\\Eloquent\\Casts\\Attribute does not specify its types\: TGet, TSet$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Product\:\:displayImages\(\) should return Illuminate\\Database\\Eloquent\\Casts\\Attribute\<list\<string\>, never\> but returns Illuminate\\Database\\Eloquent\\Casts\\Attribute\<array\<int, string\|null\>, never\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Product\:\:displayThumb\(\) return type with generic class Illuminate\\Database\\Eloquent\\Casts\\Attribute does not specify its types\: TGet, TSet$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Product\:\:parent\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Product\:\:productPricing\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Product\:\:scopeActive\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Product\:\:scopeActive\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Product\:\:scopeFeatured\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Product\:\:scopeFeatured\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Product\:\:scopeTopRated\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Product\:\:scopeTopRated\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Product\:\:scopeTopSales\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Product\:\:scopeTopSales\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Product\:\:stockLevel\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasOne does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Product\:\:unit\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$translatable has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/Models/Product.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\ProductPricing\:\:product\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/ProductPricing.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Setting\:\:\$value\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/Setting.php
+
+		-
+			message: '#^Class Rishadblack\\SyllooPosCore\\Models\\Setting uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Setting.php
+
+		-
+			message: '#^PHPDoc tag @var for constant Rishadblack\\SyllooPosCore\\Models\\Setting\:\:GENERAL_DEFAULTS with type array\<string, string\|null\> is not subtype of value array\{timezone\: ''Asia/Dhaka'', order_retention_days\: 90, backup_folder\: null, idle_lock_minutes\: 10, cash_drawer\: ''off'', scale_barcode_prefixes\: '''', scale_barcode_kind\: ''weight'', scale_barcode_item_digits\: 5, \.\.\.\}\.$#'
+			identifier: classConstant.phpDocType
+			count: 1
+			path: src/Models/Setting.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$closed_at\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/Shift.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Shift\:\:cashMovements\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Shift.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Shift\:\:orders\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Shift.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Shift\:\:scopeOpen\(\) has parameter \$query with generic class Illuminate\\Database\\Eloquent\\Builder but does not specify its types\: TModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Shift.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Shift\:\:user\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Shift.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\ShippingMethod\:\:\$display_image\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/ShippingMethod.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\ShippingMethod\:\:\$logo_link\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/ShippingMethod.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\ShippingMethod\:\:\$logo_path\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/ShippingMethod.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\ShippingMethod\:\:\$logo_url\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/ShippingMethod.php
+
+		-
+			message: '#^Class Rishadblack\\SyllooPosCore\\Models\\ShippingMethod uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/ShippingMethod.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\ShippingMethod\:\:displayImage\(\) return type with generic class Illuminate\\Database\\Eloquent\\Casts\\Attribute does not specify its types\: TGet, TSet$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/ShippingMethod.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\ShippingMethod\:\:displayThumb\(\) return type with generic class Illuminate\\Database\\Eloquent\\Casts\\Attribute does not specify its types\: TGet, TSet$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/ShippingMethod.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\ShippingMethod\:\:scopeActive\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/ShippingMethod.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\ShippingMethod\:\:scopeActive\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/ShippingMethod.php
+
+		-
+			message: '#^Class Rishadblack\\SyllooPosCore\\Models\\State uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/State.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\StockLevel\:\:product\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/StockLevel.php
+
+		-
+			message: '#^Class Rishadblack\\SyllooPosCore\\Models\\Transaction uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Transaction.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Transaction\:\:contact\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Transaction.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Transaction\:\:order\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Transaction.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Transaction\:\:paymentMethod\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Transaction.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Transaction\:\:scopeActive\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Transaction.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Transaction\:\:scopeActive\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Transaction.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Transaction\:\:scopeCredit\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Transaction.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Transaction\:\:scopeCredit\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Transaction.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Transaction\:\:scopeDebit\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Transaction.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Transaction\:\:scopeDebit\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Transaction.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Transaction\:\:scopeDefault\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Models/Transaction.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\Transaction\:\:scopeDefault\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Models/Transaction.php
+
+		-
+			message: '#^Property Rishadblack\\SyllooPosCore\\Models\\Unit\:\:\$translatable has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/Models/Unit.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\User\:\:\$api_token\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\User\:\:\$display_image\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\User\:\:\$image_url\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\User\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\User\:\:\$offline_login_until\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\User\:\:\$token_expires_at\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: '#^Class Rishadblack\\SyllooPosCore\\Models\\User uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\User\:\:displayImage\(\) return type with generic class Illuminate\\Database\\Eloquent\\Casts\\Attribute does not specify its types\: TGet, TSet$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\User\:\:displayThumb\(\) return type with generic class Illuminate\\Database\\Eloquent\\Casts\\Attribute does not specify its types\: TGet, TSet$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\User\:\:scopeSignedInHere\(\) has parameter \$query with generic class Illuminate\\Database\\Eloquent\\Builder but does not specify its types\: TModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\User\:\:scopeSignedInHere\(\) return type with generic class Illuminate\\Database\\Eloquent\\Builder does not specify its types\: TModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\User\:\:scopeWithValidToken\(\) has parameter \$query with generic class Illuminate\\Database\\Eloquent\\Builder but does not specify its types\: TModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\User\:\:scopeWithValidToken\(\) return type with generic class Illuminate\\Database\\Eloquent\\Builder does not specify its types\: TModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Models\\VariantTemplateItem\:\:variantTemplate\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/VariantTemplateItem.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptContactData\:\:\$address\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptContactData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptContactData\:\:\$business_name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptContactData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptContactData\:\:\$code\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptContactData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptContactData\:\:\$email\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptContactData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptContactData\:\:\$is_walk_in\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptContactData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptContactData\:\:\$mobile\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptContactData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptContactData\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptContactData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptContactData\:\:\$phone\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptContactData.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$code\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$orderItem\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderData\:\:\$additional_charge_details\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderData\:\:\$code\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderData\:\:\$delivery_status\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderData\:\:\$discount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderData\:\:\$discount_amount\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderData\:\:\$due_amount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderData\:\:\$due_date\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderData\:\:\$net_amount\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderData\:\:\$note\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderData\:\:\$order_date\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderData\:\:\$paid_amount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderData\:\:\$pay_change_amount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderData\:\:\$payment_status\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderData\:\:\$ref\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderData\:\:\$refund_reason\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderData\:\:\$rounding_amount\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderData\:\:\$serial\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderData\:\:\$shipping_charge\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderData\:\:\$status\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderData\:\:\$subtotal\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderData\:\:\$table_name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderData\:\:\$vat\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderData\:\:\$vat_amount\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Parameter \#1 \$return of static method Rishadblack\\SyllooPosCore\\Services\\SaleReturns\:\:exchangeCredit\(\) expects Rishadblack\\SyllooPosCore\\Models\\Order, Illuminate\\Database\\Eloquent\\Model given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Receipts/ReceiptOrderData.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$code\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderItemData.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderItemData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderItemData\:\:\$amount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderItemData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderItemData\:\:\$discount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderItemData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderItemData\:\:\$discount_amount\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Receipts/ReceiptOrderItemData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderItemData\:\:\$is_return\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderItemData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderItemData\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderItemData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderItemData\:\:\$parent_item_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderItemData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderItemData\:\:\$price_change\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderItemData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderItemData\:\:\$product_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderItemData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderItemData\:\:\$quantity\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Receipts/ReceiptOrderItemData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderItemData\:\:\$serial_tracking\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderItemData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderItemData\:\:\$status\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderItemData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderItemData\:\:\$subtotal\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderItemData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderItemData\:\:\$vat\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderItemData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptOrderItemData\:\:\$vat_amount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderItemData.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:warrantyLabel\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderItemData.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:warrantyUntil\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Receipts/ReceiptOrderItemData.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptTransactionData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptTransactionData\:\:\$amount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptTransactionData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptTransactionData\:\:\$charge\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptTransactionData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptTransactionData\:\:\$charge_amount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptTransactionData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptTransactionData\:\:\$code\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptTransactionData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptTransactionData\:\:\$flow\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptTransactionData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptTransactionData\:\:\$net_amount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptTransactionData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptTransactionData\:\:\$note\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptTransactionData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptTransactionData\:\:\$pay_change_amount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptTransactionData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptTransactionData\:\:\$status\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptTransactionData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptTransactionData\:\:\$store_credit\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptTransactionData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Receipts\\ReceiptTransactionData\:\:\$transaction_date\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Receipts/ReceiptTransactionData.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\User\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Screens/TillScreens.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\User\:\:\$api_token\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/ApiService.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\AuditLog\:\:\$action\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/AuditTrail.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\AuditLog\:\:\$approved_by\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/AuditTrail.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\AuditLog\:\:\$details\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/AuditTrail.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\AuditLog\:\:\$occurred_at\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/AuditTrail.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\AuditLog\:\:\$order_code\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/AuditTrail.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\AuditLog\:\:\$reason\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/AuditTrail.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\AuditLog\:\:\$user_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/AuditTrail.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Services\\AuditTrail\:\:unreported\(\) should return Illuminate\\Support\\Collection\<int, array\<string, mixed\>\> but returns Illuminate\\Support\\Collection\<int, array\{id\: string, action\: mixed, user_id\: mixed, approved_by\: mixed, order_code\: mixed, reason\: mixed, details\: mixed, at\: mixed\}\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Services/AuditTrail.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,Rishadblack\\SyllooPosCore\\Models\\AuditLog\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: src/Services/AuditTrail.php
+
+		-
+			message: '#^Return type of call to method Illuminate\\Database\\Eloquent\\Collection\<int,Rishadblack\\SyllooPosCore\\Models\\AuditLog\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: method.unresolvableReturnType
+			count: 1
+			path: src/Services/AuditTrail.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$paymentMethod\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/CashDrawer.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$pay_change_amount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/CashDrawer.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\PosStaff\:\:\$pin_hash\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/CashierDirectory.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\User\:\:\$email\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/CashierDirectory.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\User\:\:\$image_url\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/CashierDirectory.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\User\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/CashierDirectory.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\User\:\:\$phone\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/CashierDirectory.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Contact\:\:\$balance_at\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Services/CustomerCredit.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$display_image\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/CustomerDisplayService.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/CustomerDisplayService.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$net_sale_price\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/CustomerDisplayService.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Services\\CustomerDisplayService\:\:slides\(\) should return Illuminate\\Support\\Collection\<int, array\{type\: ''image''\|''product''\|''video'', src\: string, title\?\: string, subtitle\?\: string\}\> but returns Illuminate\\Support\\Collection\<int, array\{type\: string, src\: mixed, title\: string, subtitle\: string\}\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Services/CustomerDisplayService.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Services\\CustomerDisplayService\:\:slides\(\) should return Illuminate\\Support\\Collection\<int, array\{type\: ''image''\|''product''\|''video'', src\: string, title\?\: string, subtitle\?\: string\}\> but returns Illuminate\\Support\\Collection\<int, array\{type\: string, src\: string\}\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Services/CustomerDisplayService.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,Rishadblack\\SyllooPosCore\\Models\\Product\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: src/Services/CustomerDisplayService.php
+
+		-
+			message: '#^Return type of call to method Illuminate\\Database\\Eloquent\\Collection\<int,Rishadblack\\SyllooPosCore\\Models\\Product\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: method.unresolvableReturnType
+			count: 1
+			path: src/Services/CustomerDisplayService.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Services\\DeviceRelease\:\:unsent\(\) return type with generic class Illuminate\\Database\\Eloquent\\Builder does not specify its types\: TModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Services/DeviceRelease.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Collection\<int, Rishadblack\\SyllooPosCore\\Models\\Shift\>\|Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$cash_register_session_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/DueCollections.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Contact\:\:\$is_walk_in\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/DueCollections.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$code\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Services/DueCollections.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$contact_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/DueCollections.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$created_by\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/DueCollections.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$desktop_pos_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/DueCollections.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$note\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/DueCollections.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$order_date\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Services/DueCollections.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$shift_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/DueCollections.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$type\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/DueCollections.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Transaction\:\:\$amount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/DueCollections.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Transaction\:\:\$card_last4\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/DueCollections.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Transaction\:\:\$payment_method_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/DueCollections.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Transaction\:\:\$ref\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/DueCollections.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Services\\DueCollections\:\:except\(\) has parameter \$query with generic class Illuminate\\Database\\Eloquent\\Builder but does not specify its types\: TModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Services/DueCollections.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Services\\DueCollections\:\:except\(\) return type with generic class Illuminate\\Database\\Eloquent\\Builder does not specify its types\: TModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Services/DueCollections.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Services\\DueCollections\:\:only\(\) has parameter \$query with generic class Illuminate\\Database\\Eloquent\\Builder but does not specify its types\: TModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Services/DueCollections.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Services\\DueCollections\:\:only\(\) return type with generic class Illuminate\\Database\\Eloquent\\Builder does not specify its types\: TModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Services/DueCollections.php
+
+		-
+			message: '#^Offset ''amount'' on array\{payment_method_id\: string, amount\: float\|int\|string, ref\?\: string\|null, card_last4\?\: string\|null\} on left side of \?\? always exists and is not nullable\.$#'
+			identifier: nullCoalesce.offset
+			count: 1
+			path: src/Services/DueCollections.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Support\\Collection\<int,Illuminate\\Database\\Eloquent\\Model\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: src/Services/DueCollections.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Support\\Collection\<int,Illuminate\\Database\\Eloquent\\Model\>\:\:map\(\) expects callable\(Illuminate\\Database\\Eloquent\\Model, int\)\: array\{payment_method_id\?\: non\-empty\-string, amount\: float, ref\?\: mixed, card_last4\?\: mixed\}, Closure\(Rishadblack\\SyllooPosCore\\Models\\Transaction\)\: array\{payment_method_id\?\: non\-empty\-string, amount\: float, ref\?\: mixed, card_last4\?\: mixed\} given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Services/DueCollections.php
+
+		-
+			message: '#^Return type of call to method Illuminate\\Support\\Collection\<int,Illuminate\\Database\\Eloquent\\Model\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: method.unresolvableReturnType
+			count: 1
+			path: src/Services/DueCollections.php
+
+		-
+			message: '#^Return type of call to method Illuminate\\Support\\Collection\<int,array\<string, mixed\>\>\:\:all\(\) contains unresolvable type\.$#'
+			identifier: method.unresolvableReturnType
+			count: 1
+			path: src/Services/DueCollections.php
+
+		-
+			message: '#^Return type of call to method Illuminate\\Support\\Collection\<int,array\<string, mixed\>\>\:\:values\(\) contains unresolvable type\.$#'
+			identifier: method.unresolvableReturnType
+			count: 1
+			path: src/Services/DueCollections.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Services\\ErpApiService\:\:getUpdate\(\) has parameter \$date with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Services/ErpApiService.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Services\\ErpApiService\:\:getUpdate\(\) has parameter \$models with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Services/ErpApiService.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Services\\ErpApiService\:\:sync\(\) has parameter \$data with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Services/ErpApiService.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Services\\ErpApiService\:\:sync\(\) has parameter \$date with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Services/ErpApiService.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Services\\ErpApiService\:\:sync\(\) has parameter \$models with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Services/ErpApiService.php
+
+		-
+			message: '#^Parameter \#1 \$type of static method Rishadblack\\SyllooPosCore\\Services\\SyncErrorLog\:\:recordResponse\(\) expects ''activation''\|''auth''\|''other''\|''pull''\|''push'', ''reset'' given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Services/ErpOrderedReset.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$product\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/KitchenTickets.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Foundation\\Auth\\User\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/KitchenTickets.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\KitchenTicket\:\:\$attempts\.$#'
+			identifier: property.notFound
+			count: 3
+			path: src/Services/KitchenTickets.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\KitchenTicket\:\:\$created_at\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/KitchenTickets.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\KitchenTicket\:\:\$last_error\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/KitchenTickets.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\KitchenTicket\:\:\$lines\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Services/KitchenTickets.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\KitchenTicket\:\:\$order_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/KitchenTickets.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\KitchenTicket\:\:\$printer\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Services/KitchenTickets.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\KitchenTicket\:\:\$station\.$#'
+			identifier: property.notFound
+			count: 5
+			path: src/Services/KitchenTickets.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\KitchenTicket\:\:\$status\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/KitchenTickets.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\KitchenTicket\:\:\$tried_at\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/KitchenTickets.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\OrderItem\:\:\$kitchen_note\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/KitchenTickets.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\OrderItem\:\:\$kitchen_sent_quantity\.$#'
+			identifier: property.notFound
+			count: 3
+			path: src/Services/KitchenTickets.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\OrderItem\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/KitchenTickets.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\OrderItem\:\:\$quantity\.$#'
+			identifier: property.notFound
+			count: 3
+			path: src/Services/KitchenTickets.php
+
+		-
+			message: '#^Parameter \#1 \$bill of method Rishadblack\\SyllooPosCore\\Services\\KitchenTickets\:\:ticket\(\) expects Rishadblack\\SyllooPosCore\\Models\\Order, Illuminate\\Database\\Eloquent\\Model given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Services/KitchenTickets.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,Illuminate\\Database\\Eloquent\\Model\>\:\:mapWithKeys\(\) expects callable\(Illuminate\\Database\\Eloquent\\Model, int\)\: array\<string, float\>, Closure\(Rishadblack\\SyllooPosCore\\Models\\OrderItem\)\: non\-empty\-array\<string, float\> given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Services/KitchenTickets.php
+
+		-
+			message: '#^Parameter \#1 \$items of method Rishadblack\\SyllooPosCore\\Services\\KitchenTickets\:\:inKitchenOrder\(\) expects Illuminate\\Support\\Collection\<int, Rishadblack\\SyllooPosCore\\Models\\OrderItem\>, Illuminate\\Database\\Eloquent\\Collection\<int, Illuminate\\Database\\Eloquent\\Model\> given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Services/KitchenTickets.php
+
+		-
+			message: '#^Parameter \#1 \$keyBy of method Illuminate\\Support\\Collection\<int,Illuminate\\Database\\Eloquent\\Model\>\:\:keyBy\(\) expects \(callable\(Illuminate\\Database\\Eloquent\\Model, int\)\: string\)\|list\<Closure\|string\>\|string, Closure\(Rishadblack\\SyllooPosCore\\Models\\OrderItem\)\: string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Services/KitchenTickets.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>name" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: src/Services/KitchenTickets.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$mobile\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/LocalBackup.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/LocalBackup.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$code\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/LocalBackup.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$created_at\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/LocalBackup.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$due_amount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/LocalBackup.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$net_amount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/LocalBackup.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$paid_amount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/LocalBackup.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$sync_response\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/LocalBackup.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$barcodes\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/ProductSearchIndex.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$code\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/ProductSearchIndex.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Services\\ProductSearchIndex\:\:search\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Services/ProductSearchIndex.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/ReceiptPrintService.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$net_amount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/ReceiptPrintService.php
+
+		-
+			message: '#^Parameter \#1 \$contact of method Rishadblack\\SyllooPosCore\\Services\\CustomerCredit\:\:owed\(\) expects Rishadblack\\SyllooPosCore\\Models\\Contact, Illuminate\\Database\\Eloquent\\Model given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Services/ReceiptPrintService.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>name" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: src/Services/ReceiptPrintService.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$chain_hash\.$#'
+			identifier: property.notFound
+			count: 3
+			path: src/Services/SaleChain.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$chain_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleChain.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$chain_prev_hash\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleChain.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$chain_serial\.$#'
+			identifier: property.notFound
+			count: 4
+			path: src/Services/SaleChain.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$chain_signed_at\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleChain.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$code\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleChain.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$net_amount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleChain.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$net_sale_price\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SalePricing.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$sale_vat_amount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SalePricing.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$sale_vat_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SalePricing.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Collection\<int, Rishadblack\\SyllooPosCore\\Models\\Order\>\|Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$desktop_pos_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Collection\<int, Rishadblack\\SyllooPosCore\\Models\\Product\>\|Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 3
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Collection\<int, Rishadblack\\SyllooPosCore\\Models\\Product\>\|Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$unit_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 6
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$product\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$quantity\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$returned_elsewhere\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$serial_tracking\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$subtotal\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$code\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$contact_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$desktop_pos_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$discount_amount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$from_office\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$last_sync_at\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$net_amount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$pay_change_amount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\OrderItem\:\:\$product_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\OrderItem\:\:\$quantity\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\OrderItem\:\:\$serial_tracking\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\OrderItem\:\:\$subtotal\.$#'
+			identifier: property.notFound
+			count: 3
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\OrderItem\:\:\$unit_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\OrderItem\:\:\$vat\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\OrderItem\:\:\$vat_amount\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\PaymentMethod\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Transaction\:\:\$amount\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Transaction\:\:\$payment_method_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Transaction\:\:\$store_credit\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Builder\<Rishadblack\\SyllooPosCore\\Models\\OrderItem\>\:\:notDraft\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Relations\\HasMany\:\:withTrashed\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Services\\SaleReturns\:\:refundMethods\(\) should return list\<Rishadblack\\SyllooPosCore\\Models\\PaymentMethod\> but returns array\<int, Illuminate\\Database\\Eloquent\\Model\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Services\\SaleReturns\:\:returnableLines\(\) should return array\<string, array\{item\: Rishadblack\\SyllooPosCore\\Models\\OrderItem, name\: string, sold\: float, returned\: float, left\: float, unit_refund\: float, discount\: float, serials\: list\<string\>, \.\.\.\}\> but returns array\<string, array\{item\: Illuminate\\Database\\Eloquent\\Model, name\: string, sold\: float, returned\: float, left\: NAN\|float\<0\.0, max\>, unit_refund\: float, discount\: float, serials\: list, \.\.\.\}\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,Illuminate\\Database\\Eloquent\\Model\>\:\:mapWithKeys\(\) expects callable\(Illuminate\\Database\\Eloquent\\Model, int\)\: array\<string, float\>, Closure\(Rishadblack\\SyllooPosCore\\Models\\OrderItem\)\: non\-empty\-array\<string, float\> given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Relation ''order'' is not found in Rishadblack\\SyllooPosCore\\Models\\OrderItem model\.$#'
+			identifier: larastan.relationExistence
+			count: 2
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Unable to resolve the template type TKey in call to function collect$#'
+			identifier: argument.templateType
+			count: 3
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Unable to resolve the template type TValue in call to function collect$#'
+			identifier: argument.templateType
+			count: 3
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>contact_id" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>id" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>transaction" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: src/Services/SaleReturns.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\PaymentMethod\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/ShiftRegister.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$closed_at\.$#'
+			identifier: property.notFound
+			count: 3
+			path: src/Services/ShiftRegister.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$opened_at\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/ShiftRegister.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$opening_float\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Services/ShiftRegister.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$totals\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/ShiftRegister.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Shift\:\:\$user_id\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Services/ShiftRegister.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Transaction\:\:\$payment_method_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/ShiftRegister.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Transaction\:\:\$store_credit\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/ShiftRegister.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Transaction\:\:\$total\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Services/ShiftRegister.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Services\\ShiftRegister\:\:move\(\) should return Rishadblack\\SyllooPosCore\\Models\\CashMovement but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Services/ShiftRegister.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Support\\Collection\<\(int\|string\),Illuminate\\Support\\Collection\<int, array\<string, bool\|float\|string\>\>\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: src/Services/ShiftRegister.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Support\\Collection\<int,array\<mixed\>\>\:\:sortByDesc\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: src/Services/ShiftRegister.php
+
+		-
+			message: '#^Return type of call to method Illuminate\\Support\\Collection\<\(int\|string\),Illuminate\\Support\\Collection\<int, array\<string, bool\|float\|string\>\>\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: method.unresolvableReturnType
+			count: 1
+			path: src/Services/ShiftRegister.php
+
+		-
+			message: '#^Return type of call to method Illuminate\\Support\\Collection\<\(int\|string\),array\<mixed\>\>\:\:values\(\) contains unresolvable type\.$#'
+			identifier: method.unresolvableReturnType
+			count: 1
+			path: src/Services/ShiftRegister.php
+
+		-
+			message: '#^Return type of call to method Illuminate\\Support\\Collection\<int,array\<mixed\>\>\:\:all\(\) contains unresolvable type\.$#'
+			identifier: method.unresolvableReturnType
+			count: 1
+			path: src/Services/ShiftRegister.php
+
+		-
+			message: '#^Return type of call to method Illuminate\\Support\\Collection\<int,array\<mixed\>\>\:\:values\(\) contains unresolvable type\.$#'
+			identifier: method.unresolvableReturnType
+			count: 1
+			path: src/Services/ShiftRegister.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>id" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: src/Services/ShiftRegister.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>name" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: src/Services/ShiftRegister.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\PosStaff\:\:\$max_discount_percent\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/StaffDirectory.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\PosStaff\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/StaffDirectory.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\User\:\:\$max_discount_percent\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/StaffDirectory.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>max_discount_percent" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: src/Services/StaffDirectory.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\OrderItem\:\:\$kitchen_sent_quantity\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/StockAvailability.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\OrderItem\:\:\$order_status\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/StockAvailability.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\OrderItem\:\:\$order_type\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/StockAvailability.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\OrderItem\:\:\$product_id\.$#'
+			identifier: property.notFound
+			count: 3
+			path: src/Services/StockAvailability.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\OrderItem\:\:\$quantity\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/StockAvailability.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\OrderItem\:\:\$unit_id\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Services/StockAvailability.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$is_out_of_stock_sale\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/StockAvailability.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$low_stock_alert\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/StockAvailability.php
+
+		-
+			message: '#^Instanceof between Rishadblack\\SyllooPosCore\\Models\\Product and Rishadblack\\SyllooPosCore\\Models\\Product will always evaluate to true\.$#'
+			identifier: instanceof.alwaysTrue
+			count: 1
+			path: src/Services/StockAvailability.php
+
+		-
+			message: '#^Call to function in_array\(\) with arguments ''activation''\|''auth''\|''other''\|''pull''\|''push'', array\{''push'', ''pull'', ''auth'', ''activation'', ''other''\} and true will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: src/Services/SyncErrorLog.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Services\\SyncStatusService\:\:dataTypes\(\) should return Illuminate\\Support\\Collection\<int, array\{name\: string, label\: string, records\: int, last_pulled_at\: Illuminate\\Support\\Carbon\|null\}\> but returns Illuminate\\Support\\Collection\<int, array\{name\: string, label\: string, records\: mixed, last_pulled_at\: Illuminate\\Support\\Carbon\|null\}\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Services/SyncStatusService.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Services\\SyncStatusService\:\:status\(\) has parameter \$cashier with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Services/SyncStatusService.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Support\\Collection\<string,string\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: src/Services/SyncStatusService.php
+
+		-
+			message: '#^Return type of call to method Illuminate\\Support\\Collection\<string,array\<string, mixed\>\>\:\:values\(\) contains unresolvable type\.$#'
+			identifier: method.unresolvableReturnType
+			count: 1
+			path: src/Services/SyncStatusService.php
+
+		-
+			message: '#^Return type of call to method Illuminate\\Support\\Collection\<string,string\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: method.unresolvableReturnType
+			count: 1
+			path: src/Services/SyncStatusService.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Services/TableBills.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$kitchen_note\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/TableBills.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$kitchen_sent_quantity\.$#'
+			identifier: property.notFound
+			count: 5
+			path: src/Services/TableBills.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$parent_item_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/TableBills.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$product_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/TableBills.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$quantity\.$#'
+			identifier: property.notFound
+			count: 6
+			path: src/Services/TableBills.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$unit_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/TableBills.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\DiningTable\:\:\$area\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/TableBills.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\DiningTable\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Services/TableBills.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\DiningTable\:\:\$seats\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/TableBills.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$additional_charge\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Services/TableBills.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$additional_charge_details\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Services/TableBills.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$created_at\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/TableBills.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$dining_table_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/TableBills.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$guest_count\.$#'
+			identifier: property.notFound
+			count: 4
+			path: src/Services/TableBills.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$note\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Services/TableBills.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$opened_at\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Services/TableBills.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Order\:\:\$table_name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/TableBills.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Services\\TableBills\:\:tiles\(\) should return Illuminate\\Support\\Collection\<string, list\<array\{id\: string, name\: string, seats\: int\|null, bill\: Rishadblack\\SyllooPosCore\\Models\\Order\|null\}\>\> but returns Illuminate\\Support\\Collection\<\(int\|string\), array\<int, mixed\>\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Services/TableBills.php
+
+		-
+			message: '#^Unable to resolve the template type TMapValue in call to method Illuminate\\Database\\Eloquent\\Collection\<int,Rishadblack\\SyllooPosCore\\Models\\Order\>\:\:map\(\)$#'
+			identifier: argument.templateType
+			count: 1
+			path: src/Services/TableBills.php
+
+		-
+			message: '#^Unable to resolve the template type TValue in call to function collect$#'
+			identifier: argument.templateType
+			count: 1
+			path: src/Services/TableBills.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$unit_id\.$#'
+			identifier: property.notFound
+			count: 5
+			path: src/Services/UnitConversion.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$units\.$#'
+			identifier: property.notFound
+			count: 4
+			path: src/Services/UnitConversion.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Unit\:\:\$base_unit_id\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Services/UnitConversion.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Unit\:\:\$factor\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Services/UnitConversion.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Unit\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 3
+			path: src/Services/UnitConversion.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Unit\:\:\$status\.$#'
+			identifier: property.notFound
+			count: 3
+			path: src/Services/UnitConversion.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>name" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: src/Services/UnitConversion.php
+
+		-
+			message: '#^Method Rishadblack\\SyllooPosCore\\Support\\DeviceState\:\:instance\(\) should return Rishadblack\\SyllooPosCore\\Support\\TerminalDeviceState but returns Rishadblack\\SyllooAppBase\\Device\\DeviceState\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Support/DeviceState.php
+
+		-
+			message: '#^PHPDoc tag @return with type int\|list\<string\>\|string\|null is not subtype of native type string\|null\.$#'
+			identifier: return.phpDocType
+			count: 1
+			path: src/Support/DeviceState.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$category_ids\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Support/KitchenStations.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>category_ids" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: src/Support/KitchenStations.php
+
+		-
+			message: '#^Offset ''features'' on array\{updated_at\: string\|null, business\: array\<string, string\|null\>, outlet\: array\<string, mixed\>, logo\: array\{url\: string\|null, path\?\: string\|null\}, fetched_at\?\: string\}\|null on left side of \?\? does not exist\.$#'
+			identifier: nullCoalesce.offset
+			count: 2
+			path: src/Support/RestaurantMode.php
+
+		-
+			message: '#^Strict comparison using \=\=\= between false and true will always evaluate to false\.$#'
+			identifier: identical.alwaysFalse
+			count: 1
+			path: src/Support/RestaurantMode.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Support/VariantLabels.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$code\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Support/VariantLabels.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\Product\:\:\$variant_items\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Support/VariantLabels.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\VariantTemplateItem\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Support/VariantLabels.php
+
+		-
+			message: '#^Access to an undefined property Rishadblack\\SyllooPosCore\\Models\\VariantTemplateItem\:\:\$sort\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Support/VariantLabels.php
+
+		-
+			message: '#^Property Rishadblack\\SyllooPosCore\\Support\\VariantLabels\:\:\$items \(array\<string, array\{kind\: string, value\: string, sort\: int\}\>\|null\) does not accept array\<int, array\{kind\: string, value\: string, sort\: int\}\>\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Support/VariantLabels.php

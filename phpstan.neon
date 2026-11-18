@@ -1,0 +1,11 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+    - phpstan-baseline.neon
+
+parameters:
+    level: 6
+    phpVersion: 80300
+    paths:
+        - src
+        - database
+    tmpDir: build/phpstan

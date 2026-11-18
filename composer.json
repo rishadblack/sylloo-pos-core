@@ -1,0 +1,75 @@
+{
+    "name": "rishadblack/sylloo-pos-core",
+    "description": "The shared core of the Sylloo POS tills (PC and Android): the till's models and migrations, the money rules, the sync jobs with the ERP, the receipt layouts and data, the texts and the till's parts of the shared device screens. No screen, no platform: each till answers its contracts.",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "S M Rishad",
+            "email": "rishad.black@gmail.com",
+            "homepage": "https://smrishad.com"
+        }
+    ],
+    "homepage": "https://github.com/rishadblack/sylloo-pos-core",
+    "keywords": [
+        "laravel",
+        "sylloo",
+        "pos",
+        "till",
+        "nativephp"
+    ],
+    "require": {
+        "php": "^8.3",
+        "laravel/framework": "^12.0|^13.0",
+        "milon/barcode": "^12.0|^13.0",
+        "rishadblack/larahelpers": "^2.0",
+        "rishadblack/sylloo-app-base": "^1.0",
+        "spatie/laravel-translatable": "^6.0"
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.0",
+        "laravel/pint": "^1.20",
+        "orchestra/testbench": "^10.0|^11.0",
+        "pestphp/pest": "^4.0|^5.0",
+        "pestphp/pest-plugin-laravel": "^4.0|^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rishadblack\\SyllooPosCore\\": "src/",
+            "Rishadblack\\SyllooPosCore\\Database\\Factories\\": "database/factories/",
+            "Rishadblack\\SyllooPosCore\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rishadblack\\SyllooPosCore\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest --compact",
+        "lint": "vendor/bin/pint",
+        "lint:check": "vendor/bin/pint --test",
+        "analyse": "vendor/bin/phpstan analyse --memory-limit=1G",
+        "check": [
+            "@lint:check",
+            "@analyse",
+            "@test"
+        ]
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rishadblack\\SyllooPosCore\\SyllooPosCoreServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
